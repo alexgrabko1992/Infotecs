@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="table">
       <table class="table_sort">
         <thead>
           <tr>
@@ -20,6 +20,28 @@
         </thead>
         <tbody id="dest"></tbody>
       </table>
+    </div>
+    <div class="container" id="form">
+      <form action="" method="post">
+        <h3 id="number_tr"></h3>
+        <label for="name">Введите имя</label>
+        <input type="text" name="name" id="name" />
+        <label for="last_name">Введите фамилию</label>
+        <input type="text" name="last_name" id="last_name" />
+        <label for="about">Расскажите о себе</label>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        <p>Выберите цвет ваших глаз:</p>
+        <div id="radio_input">
+          <input type="radio" id="red" />
+          <label for="red">Красный</label>
+          <input type="radio" id="green" />
+          <label for="green">Зеленый</label>
+          <input type="radio" id="brown" />
+          <label for="brown">Коричневый</label>
+          <input type="radio" id="blue" />
+          <label for="blue">Синий</label>
+        </div>
+      </form>
     </div>
     <script type="module" src="./main.js"></script>
     <script src="./sort.js"></script>

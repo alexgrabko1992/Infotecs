@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   font-family: sans-serif;
+  display: flex;
 }
 
 .container {
@@ -69,4 +70,30 @@ th.sorted[data-order="-1"]::after {
 
 th.sorted[data-order="1"]::after {
   content: "▲";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 50%;
+  margin: auto;
+}
+
+input,
+textarea,
+label {
+  margin-top: 10px;
+}
+
+#radio_input input {
+  width: auto;
+}
+
+form p {
+  margin-top: 10px;
 }
