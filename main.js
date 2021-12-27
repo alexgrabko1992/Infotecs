@@ -14,6 +14,9 @@ for (let i = 0; i < data.length; i++) {
   ];
   for (let j = 0; j < array.length; j++) {
     let td = document.createElement("td");
+    if (j === 2) {
+      td.classList.add("about");
+    }
     td.innerHTML = array[j];
     console.log(array[j]);
     tr.appendChild(td);
