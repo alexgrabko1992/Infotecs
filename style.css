@@ -72,6 +72,10 @@ th.sorted[data-order="1"]::after {
   content: "▲";
 }
 
+#form {
+  visibility: hidden;
+}
+
 form {
   display: flex;
   flex-direction: column;

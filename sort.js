@@ -1,3 +1,5 @@
+// Функция для сортировки по алфавиту элементов таблицы
+
 document.addEventListener("DOMContentLoaded", () => {
   const getSort = ({ target }) => {
     const order = (target.dataset.order = -(target.dataset.order || -1));

@@ -1,11 +1,14 @@
 alert("Hello");
 
+// Импортируем данные для таблицы из data.js
+
 import { data } from "./data.js";
 
-// console.log(data[0]);
+// Пишем лупер для того, чтобы они отобразились в таблице с уже готовой шапкой
 
 for (let i = 0; i < data.length; i++) {
   let tr = document.createElement("tr");
+  tr.id = i + 1;
   let array = [
     data[i].name.firstName,
     data[i].name.lastName,
@@ -22,6 +25,14 @@ for (let i = 0; i < data.length; i++) {
     tr.appendChild(td);
   }
   document.getElementById("dest").appendChild(tr);
+  tr.onclick = function () {
+    const form = document.getElementById("form");
+    form.style.visibility = "visible";
+    const name = document.getElementById("name");
+    name.value = array[0];
+    last_name.value = array[1];
+    about.value = array[2];
+  };
 }
 
 // const tr = document.createElement("tr");
