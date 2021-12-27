@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 50%;
+  border: 5px dashed rebeccapurple;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
