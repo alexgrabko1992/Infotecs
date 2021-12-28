@@ -1,4 +1,4 @@
-alert("Hello");
+// alert("Hello");
 
 // Импортируем данные для таблицы из data.js
 
@@ -21,7 +21,7 @@ for (let i = 0; i < data.length; i++) {
       td.classList.add("about");
     }
     td.innerHTML = array[j];
-    console.log(array[j]);
+    // console.log(array[j]);
     tr.appendChild(td);
   }
   document.getElementById("dest").appendChild(tr);
@@ -32,6 +32,9 @@ for (let i = 0; i < data.length; i++) {
     name.value = array[0];
     last_name.value = array[1];
     about.value = array[2];
+    document.querySelector(
+      `input[type='radio'][value=${array[3]}]`
+    ).checked = true;
   };
 }
 
