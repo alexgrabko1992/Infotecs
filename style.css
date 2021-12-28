@@ -83,12 +83,6 @@ form {
 }
 
 input,
-textarea {
-  width: 50%;
-  margin: auto;
-}
-
-input,
 textarea,
 label {
   margin-top: 10px;
@@ -100,4 +94,37 @@ label {
 
 form p {
   margin-top: 10px;
+}
+
+button {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+  width: 7rem;
+  margin: 20px auto;
+}
+button:hover {
+  background: rgb(53, 167, 110);
+}
+button:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  box-sizing: border-box;
+}
+
+textarea {
+  padding: 12px 20px;
+  width: 80%;
+  margin: 8px auto;
 }
