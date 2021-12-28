@@ -1,3 +1,5 @@
+/*           Прописываем начальные стили для страницы           */
+
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +13,16 @@ body {
   display: flex;
 }
 
+/*           Прописываем стили для двух котнтейнеров          */
+
 .container {
   width: 50%;
   border: 5px dashed rebeccapurple;
   height: 100%;
   overflow: scroll;
 }
+
+/*           Прописываем стили для таблицы         */
 
 table {
   width: 100%;
@@ -31,6 +37,8 @@ table {
   width: 100%;
 }
 
+/*           Стилизуем шапку таблицы           */
+
 table .table_sort {
   border-collapse: collapse;
 }
@@ -40,6 +48,8 @@ table .table_sort {
   background: #008b8b;
   cursor: pointer;
 }
+
+/*           Стилихуем ячейки таблицы           */
 
 td,
 th {
@@ -64,6 +74,8 @@ th.sorted[data-order="-1"]::after {
   position: absolute;
 }
 
+/*           Добавляем иконки для отображения порядка сортировки           */
+
 th.sorted[data-order="-1"]::after {
   content: "▼";
 }
@@ -71,6 +83,8 @@ th.sorted[data-order="-1"]::after {
 th.sorted[data-order="1"]::after {
   content: "▲";
 }
+
+/*           Прописываем стили для формы          */
 
 #form {
   visibility: hidden;
@@ -95,6 +109,8 @@ label {
 form p {
   margin-top: 10px;
 }
+
+/*           Стилизуем кнопку           */
 
 button {
   font-weight: 700;
@@ -127,4 +143,9 @@ textarea {
   padding: 12px 20px;
   width: 80%;
   margin: 8px auto;
+}
+
+td,
+button {
+  cursor: pointer;
 }
